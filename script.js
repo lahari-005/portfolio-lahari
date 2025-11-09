@@ -1,7 +1,7 @@
 // Simple animations and interactive behavior for Lahari's Portfolio
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Animate skill bars
+  // Animate skill bars (if present)
   const fills = document.querySelectorAll(".skill-fill");
   const observer = new IntersectionObserver(
     (entries) => {
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Fade-in animation trigger
   const animatedSections = document.querySelectorAll(
-    ".section, .hero-grid > div, .about-card, .skill-row, .project-card, .contact-card"
+    ".section, .hero-grid > div, .about-card, .project-card, .contact-card"
   );
 
   const fadeObserver = new IntersectionObserver(
